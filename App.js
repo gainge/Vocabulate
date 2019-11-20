@@ -6,20 +6,42 @@ import {
 
 } from 'react-native';
 
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+
+import AppStyles from './src/styles/AppStyles'
+
+import Home from './src/screens/Home'
 
 
-// Load app data
-import appData from './src/util/DataLoader';
+const AppNavigator = createStackNavigator(
+  {
+    Home: Home
+  },
+  {
+    initialRouteName: 'Home',
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor: AppStyles.color.primary,
+        borderBottomWidth: 0,
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+        fontSize: 30,
+        color: AppStyles.color.textLight,
+      },
+    },
+    headerLayoutPreset: 'center'
+  }
+);
 
+const AppContainer = createAppContainer(AppNavigator);
 
 
 export default class App extends Component {
   render() {
-    return (
-      <View>
-        <Text> textInComponent </Text>
-      </View>
-    )
+    return <AppContainer />
   }
 }
 
