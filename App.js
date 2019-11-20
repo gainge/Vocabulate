@@ -8,6 +8,11 @@ import {
 
 
 
+// Load app data
+import appData from './src/util/DataLoader';
+
+
+
 export default class App extends Component {
   render() {
     return (
