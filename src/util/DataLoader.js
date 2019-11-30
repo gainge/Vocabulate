@@ -9,8 +9,8 @@ const jsonData = require('../../assets/data/demoList.json');
 
 const appData = List.deserialize(jsonData);
 
-export { 
-  appData 
+export {
+  appData
 };
 
 

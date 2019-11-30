@@ -4,16 +4,21 @@ import { Text, StyleSheet, View } from 'react-native'
 import PropTypes from 'prop-types'
 
 import List from '../model/List';
+import HorizontalRule from './HorizontalRule';
 
 
 export default class ListItem extends Component {
   render() {
+    let list = this.props.list;
+
     return (
       <View style={[styles.itemContainer, this.props.style ]}>
         <Text style={styles.titleWrapper}>
           <Text>Title: </Text>
-          <Text style={styles.title}>{this.props.list.title}</Text>
+          <Text style={styles.title}>{list.title}</Text>
         </Text>
+        <HorizontalRule width={1.5} />
+        <Text>Items: {list.items.length}</Text>
       </View>
     )
   }
@@ -25,7 +30,6 @@ const styles = StyleSheet.create({
   },
   titleWrapper: {
     fontSize: 20,
-    textDecorationLine: 'underline'
   },
   title: {
     fontStyle: 'italic',
