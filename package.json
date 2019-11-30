@@ -1,5 +1,5 @@
 {
-  "name": "Vocabulate",
+  "name": "Lingual",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -14,6 +14,7 @@
     "react": "16.9.0",
     "react-native": "0.61.4",
     "react-native-gesture-handler": "^1.5.0",
+    "react-native-rename": "^2.4.1",
     "react-navigation": "^4.0.10",
     "react-navigation-stack": "^1.10.3"
   },

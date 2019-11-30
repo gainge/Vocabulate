@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "Vocabulate-tvOS.app"
-               BlueprintName = "Vocabulate-tvOS"
-               ReferencedContainer = "container:Vocabulate.xcodeproj">
+               BuildableName = "Lingual-tvOS.app"
+               BlueprintName = "Lingual-tvOS"
+               ReferencedContainer = "container:Lingual.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "Vocabulate-tvOSTests.xctest"
-               BlueprintName = "Vocabulate-tvOSTests"
-               ReferencedContainer = "container:Vocabulate.xcodeproj">
+               BuildableName = "Lingual-tvOSTests.xctest"
+               BlueprintName = "Lingual-tvOSTests"
+               ReferencedContainer = "container:Lingual.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "Vocabulate-tvOSTests.xctest"
-               BlueprintName = "Vocabulate-tvOSTests"
-               ReferencedContainer = "container:Vocabulate.xcodeproj">
+               BuildableName = "Lingual-tvOSTests.xctest"
+               BlueprintName = "Lingual-tvOSTests"
+               ReferencedContainer = "container:Lingual.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "Vocabulate-tvOS.app"
-            BlueprintName = "Vocabulate-tvOS"
-            ReferencedContainer = "container:Vocabulate.xcodeproj">
+            BuildableName = "Lingual-tvOS.app"
+            BlueprintName = "Lingual-tvOS"
+            ReferencedContainer = "container:Lingual.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "Vocabulate-tvOS.app"
-            BlueprintName = "Vocabulate-tvOS"
-            ReferencedContainer = "container:Vocabulate.xcodeproj">
+            BuildableName = "Lingual-tvOS.app"
+            BlueprintName = "Lingual-tvOS"
+            ReferencedContainer = "container:Lingual.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "Vocabulate-tvOS.app"
-            BlueprintName = "Vocabulate-tvOS"
-            ReferencedContainer = "container:Vocabulate.xcodeproj">
+            BuildableName = "Lingual-tvOS.app"
+            BlueprintName = "Lingual-tvOS"
+            ReferencedContainer = "container:Lingual.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

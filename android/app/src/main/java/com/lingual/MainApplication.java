@@ -1,4 +1,4 @@
-package com.vocabulate;
+package com.lingual;
 
 import android.app.Application;
 import android.content.Context;

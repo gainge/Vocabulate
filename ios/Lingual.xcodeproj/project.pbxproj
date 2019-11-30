@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* VocabulateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* VocabulateTests.m */; };
+		00E356F31AD99517003FC87E /* LingualTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* LingualTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -15,11 +15,11 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* VocabulateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* VocabulateTests.m */; };
-		697B3AAC384CE7FD6B5E9A32 /* libPods-Vocabulate-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 239D1640F2A2D5E5815E3670 /* libPods-Vocabulate-tvOSTests.a */; };
-		7750ED4A0308042C7CAE669B /* libPods-VocabulateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA926141419EAB97F36E4F9 /* libPods-VocabulateTests.a */; };
-		847BDAFD78D43F6304B19292 /* libPods-Vocabulate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4E55BD5C174A8491E2F4A8 /* libPods-Vocabulate.a */; };
-		99302A5FB0A922FC418BD7FE /* libPods-Vocabulate-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA6EC4171BF5A6315AA3E5C /* libPods-Vocabulate-tvOS.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* LingualTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* LingualTests.m */; };
+		697B3AAC384CE7FD6B5E9A32 /* libPods-Lingual-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 239D1640F2A2D5E5815E3670 /* libPods-Lingual-tvOSTests.a */; };
+		7750ED4A0308042C7CAE669B /* libPods-LingualTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA926141419EAB97F36E4F9 /* libPods-LingualTests.a */; };
+		847BDAFD78D43F6304B19292 /* libPods-Lingual.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4E55BD5C174A8491E2F4A8 /* libPods-Lingual.a */; };
+		99302A5FB0A922FC418BD7FE /* libPods-Lingual-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA6EC4171BF5A6315AA3E5C /* libPods-Lingual-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,43 +28,43 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = Vocabulate;
+			remoteInfo = Lingual;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "Vocabulate-tvOS";
+			remoteInfo = "Lingual-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* VocabulateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocabulateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* LingualTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LingualTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* VocabulateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VocabulateTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Vocabulate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocabulate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Vocabulate/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Vocabulate/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* LingualTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LingualTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Lingual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lingual.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Lingual/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Lingual/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Vocabulate/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Vocabulate/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Vocabulate/main.m; sourceTree = "<group>"; };
-		1798884CD12DD504640A5E21 /* Pods-Vocabulate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vocabulate.debug.xcconfig"; path = "Target Support Files/Pods-Vocabulate/Pods-Vocabulate.debug.xcconfig"; sourceTree = "<group>"; };
-		239D1640F2A2D5E5815E3670 /* libPods-Vocabulate-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vocabulate-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E47B1E0B4A5D006451C7 /* Vocabulate-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vocabulate-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* Vocabulate-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Vocabulate-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DA721A87EEDC74979FAFA24 /* Pods-Vocabulate-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vocabulate-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Vocabulate-tvOSTests/Pods-Vocabulate-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		51CFF2D033EBB1201530289A /* Pods-Vocabulate-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vocabulate-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Vocabulate-tvOS/Pods-Vocabulate-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		5CA6EC4171BF5A6315AA3E5C /* libPods-Vocabulate-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vocabulate-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		70572CB6B538739A706AE46A /* Pods-Vocabulate-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vocabulate-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Vocabulate-tvOS/Pods-Vocabulate-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		9CA926141419EAB97F36E4F9 /* libPods-VocabulateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VocabulateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB682E7258B38E7702F69103 /* Pods-Vocabulate-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vocabulate-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Vocabulate-tvOSTests/Pods-Vocabulate-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BA4E55BD5C174A8491E2F4A8 /* libPods-Vocabulate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vocabulate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFAF17B48EADA229AB285794 /* Pods-Vocabulate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vocabulate.release.xcconfig"; path = "Target Support Files/Pods-Vocabulate/Pods-Vocabulate.release.xcconfig"; sourceTree = "<group>"; };
-		CBE67B5734DE2D39158E751C /* Pods-VocabulateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VocabulateTests.release.xcconfig"; path = "Target Support Files/Pods-VocabulateTests/Pods-VocabulateTests.release.xcconfig"; sourceTree = "<group>"; };
-		D4B3218D1EB6F24E1A685DDA /* Pods-VocabulateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VocabulateTests.debug.xcconfig"; path = "Target Support Files/Pods-VocabulateTests/Pods-VocabulateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Lingual/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Lingual/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Lingual/main.m; sourceTree = "<group>"; };
+		1798884CD12DD504640A5E21 /* Pods-Lingual.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lingual.debug.xcconfig"; path = "Target Support Files/Pods-Lingual/Pods-Lingual.debug.xcconfig"; sourceTree = "<group>"; };
+		239D1640F2A2D5E5815E3670 /* libPods-Lingual-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lingual-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* Lingual-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lingual-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* Lingual-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lingual-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA721A87EEDC74979FAFA24 /* Pods-Lingual-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lingual-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Lingual-tvOSTests/Pods-Lingual-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		51CFF2D033EBB1201530289A /* Pods-Lingual-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lingual-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Lingual-tvOS/Pods-Lingual-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		5CA6EC4171BF5A6315AA3E5C /* libPods-Lingual-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lingual-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70572CB6B538739A706AE46A /* Pods-Lingual-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lingual-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Lingual-tvOS/Pods-Lingual-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		9CA926141419EAB97F36E4F9 /* libPods-LingualTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LingualTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB682E7258B38E7702F69103 /* Pods-Lingual-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lingual-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Lingual-tvOSTests/Pods-Lingual-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA4E55BD5C174A8491E2F4A8 /* libPods-Lingual.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Lingual.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFAF17B48EADA229AB285794 /* Pods-Lingual.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lingual.release.xcconfig"; path = "Target Support Files/Pods-Lingual/Pods-Lingual.release.xcconfig"; sourceTree = "<group>"; };
+		CBE67B5734DE2D39158E751C /* Pods-LingualTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LingualTests.release.xcconfig"; path = "Target Support Files/Pods-LingualTests/Pods-LingualTests.release.xcconfig"; sourceTree = "<group>"; };
+		D4B3218D1EB6F24E1A685DDA /* Pods-LingualTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LingualTests.debug.xcconfig"; path = "Target Support Files/Pods-LingualTests/Pods-LingualTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7750ED4A0308042C7CAE669B /* libPods-VocabulateTests.a in Frameworks */,
+				7750ED4A0308042C7CAE669B /* libPods-LingualTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				847BDAFD78D43F6304B19292 /* libPods-Vocabulate.a in Frameworks */,
+				847BDAFD78D43F6304B19292 /* libPods-Lingual.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99302A5FB0A922FC418BD7FE /* libPods-Vocabulate-tvOS.a in Frameworks */,
+				99302A5FB0A922FC418BD7FE /* libPods-Lingual-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,20 +98,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				697B3AAC384CE7FD6B5E9A32 /* libPods-Vocabulate-tvOSTests.a in Frameworks */,
+				697B3AAC384CE7FD6B5E9A32 /* libPods-Lingual-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* VocabulateTests */ = {
+		00E356EF1AD99517003FC87E /* LingualTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* VocabulateTests.m */,
+				00E356F21AD99517003FC87E /* LingualTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = VocabulateTests;
+			path = LingualTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -122,7 +122,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* Vocabulate */ = {
+		13B07FAE1A68108700A75B9A /* Lingual */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -133,7 +133,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = Vocabulate;
+			name = Lingual;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -141,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				BA4E55BD5C174A8491E2F4A8 /* libPods-Vocabulate.a */,
-				5CA6EC4171BF5A6315AA3E5C /* libPods-Vocabulate-tvOS.a */,
-				239D1640F2A2D5E5815E3670 /* libPods-Vocabulate-tvOSTests.a */,
-				9CA926141419EAB97F36E4F9 /* libPods-VocabulateTests.a */,
+				BA4E55BD5C174A8491E2F4A8 /* libPods-Lingual.a */,
+				5CA6EC4171BF5A6315AA3E5C /* libPods-Lingual-tvOS.a */,
+				239D1640F2A2D5E5815E3670 /* libPods-Lingual-tvOSTests.a */,
+				9CA926141419EAB97F36E4F9 /* libPods-LingualTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,9 +159,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* Vocabulate */,
+				13B07FAE1A68108700A75B9A /* Lingual */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* VocabulateTests */,
+				00E356EF1AD99517003FC87E /* LingualTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				F771DDC014ABF19790AC24A0 /* Pods */,
@@ -174,10 +174,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Vocabulate.app */,
-				00E356EE1AD99517003FC87E /* VocabulateTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* Vocabulate-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* Vocabulate-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Lingual.app */,
+				00E356EE1AD99517003FC87E /* LingualTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* Lingual-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* Lingual-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,14 +185,14 @@
 		F771DDC014ABF19790AC24A0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1798884CD12DD504640A5E21 /* Pods-Vocabulate.debug.xcconfig */,
-				BFAF17B48EADA229AB285794 /* Pods-Vocabulate.release.xcconfig */,
-				51CFF2D033EBB1201530289A /* Pods-Vocabulate-tvOS.debug.xcconfig */,
-				70572CB6B538739A706AE46A /* Pods-Vocabulate-tvOS.release.xcconfig */,
-				AB682E7258B38E7702F69103 /* Pods-Vocabulate-tvOSTests.debug.xcconfig */,
-				2DA721A87EEDC74979FAFA24 /* Pods-Vocabulate-tvOSTests.release.xcconfig */,
-				D4B3218D1EB6F24E1A685DDA /* Pods-VocabulateTests.debug.xcconfig */,
-				CBE67B5734DE2D39158E751C /* Pods-VocabulateTests.release.xcconfig */,
+				1798884CD12DD504640A5E21 /* Pods-Lingual.debug.xcconfig */,
+				BFAF17B48EADA229AB285794 /* Pods-Lingual.release.xcconfig */,
+				51CFF2D033EBB1201530289A /* Pods-Lingual-tvOS.debug.xcconfig */,
+				70572CB6B538739A706AE46A /* Pods-Lingual-tvOS.release.xcconfig */,
+				AB682E7258B38E7702F69103 /* Pods-Lingual-tvOSTests.debug.xcconfig */,
+				2DA721A87EEDC74979FAFA24 /* Pods-Lingual-tvOSTests.release.xcconfig */,
+				D4B3218D1EB6F24E1A685DDA /* Pods-LingualTests.debug.xcconfig */,
+				CBE67B5734DE2D39158E751C /* Pods-LingualTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -201,9 +201,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* VocabulateTests */ = {
+		00E356ED1AD99517003FC87E /* LingualTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "VocabulateTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "LingualTests" */;
 			buildPhases = (
 				319DAFC14D558E96BED12885 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -215,14 +215,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = VocabulateTests;
-			productName = VocabulateTests;
-			productReference = 00E356EE1AD99517003FC87E /* VocabulateTests.xctest */;
+			name = LingualTests;
+			productName = LingualTests;
+			productReference = 00E356EE1AD99517003FC87E /* LingualTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* Vocabulate */ = {
+		13B07F861A680F5B00A75B9A /* Lingual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Vocabulate" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Lingual" */;
 			buildPhases = (
 				B8F3ECB30387BC5ADF8602FA /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -235,14 +235,14 @@
 			);
 			dependencies = (
 			);
-			name = Vocabulate;
-			productName = Vocabulate;
-			productReference = 13B07F961A680F5B00A75B9A /* Vocabulate.app */;
+			name = Lingual;
+			productName = Lingual;
+			productReference = 13B07F961A680F5B00A75B9A /* Lingual.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* Vocabulate-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* Lingual-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Vocabulate-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Lingual-tvOS" */;
 			buildPhases = (
 				D3819F44855938C0644718DF /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -255,14 +255,14 @@
 			);
 			dependencies = (
 			);
-			name = "Vocabulate-tvOS";
-			productName = "Vocabulate-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* Vocabulate-tvOS.app */;
+			name = "Lingual-tvOS";
+			productName = "Lingual-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* Lingual-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* Vocabulate-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* Lingual-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Vocabulate-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Lingual-tvOSTests" */;
 			buildPhases = (
 				D2876E3357526B0B496338A3 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -274,9 +274,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "Vocabulate-tvOSTests";
-			productName = "Vocabulate-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* Vocabulate-tvOSTests.xctest */;
+			name = "Lingual-tvOSTests";
+			productName = "Lingual-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* Lingual-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -303,7 +303,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Vocabulate" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Lingual" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -316,10 +316,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* Vocabulate */,
-				00E356ED1AD99517003FC87E /* VocabulateTests */,
-				2D02E47A1E0B4A5D006451C7 /* Vocabulate-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* Vocabulate-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* Lingual */,
+				00E356ED1AD99517003FC87E /* LingualTests */,
+				2D02E47A1E0B4A5D006451C7 /* Lingual-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* Lingual-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -402,7 +402,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VocabulateTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-LingualTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -424,7 +424,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Vocabulate-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Lingual-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -446,7 +446,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Vocabulate-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Lingual-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -468,7 +468,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Vocabulate-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Lingual-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -520,7 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* VocabulateTests.m in Sources */,
+				00E356F31AD99517003FC87E /* LingualTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* VocabulateTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* LingualTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,12 +555,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* Vocabulate */;
+			target = 13B07F861A680F5B00A75B9A /* Lingual */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* Vocabulate-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* Lingual-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -572,7 +572,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = Vocabulate;
+			path = Lingual;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -580,14 +580,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4B3218D1EB6F24E1A685DDA /* Pods-VocabulateTests.debug.xcconfig */;
+			baseConfigurationReference = D4B3218D1EB6F24E1A685DDA /* Pods-LingualTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = VocabulateTests/Info.plist;
+				INFOPLIST_FILE = LingualTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -597,17 +597,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vocabulate.app/Vocabulate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lingual.app/Lingual";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBE67B5734DE2D39158E751C /* Pods-VocabulateTests.release.xcconfig */;
+			baseConfigurationReference = CBE67B5734DE2D39158E751C /* Pods-LingualTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = VocabulateTests/Info.plist;
+				INFOPLIST_FILE = LingualTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -617,18 +617,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vocabulate.app/Vocabulate";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lingual.app/Lingual";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1798884CD12DD504640A5E21 /* Pods-Vocabulate.debug.xcconfig */;
+			baseConfigurationReference = 1798884CD12DD504640A5E21 /* Pods-Lingual.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = Vocabulate/Info.plist;
+				INFOPLIST_FILE = Lingual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -636,18 +636,18 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Vocabulate;
+				PRODUCT_NAME = Lingual;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFAF17B48EADA229AB285794 /* Pods-Vocabulate.release.xcconfig */;
+			baseConfigurationReference = BFAF17B48EADA229AB285794 /* Pods-Lingual.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = Vocabulate/Info.plist;
+				INFOPLIST_FILE = Lingual/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -655,14 +655,14 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Vocabulate;
+				PRODUCT_NAME = Lingual;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51CFF2D033EBB1201530289A /* Pods-Vocabulate-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 51CFF2D033EBB1201530289A /* Pods-Lingual-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -673,14 +673,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Vocabulate-tvOS/Info.plist";
+				INFOPLIST_FILE = "Lingual-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Vocabulate-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Lingual-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -690,7 +690,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70572CB6B538739A706AE46A /* Pods-Vocabulate-tvOS.release.xcconfig */;
+			baseConfigurationReference = 70572CB6B538739A706AE46A /* Pods-Lingual-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -701,14 +701,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Vocabulate-tvOS/Info.plist";
+				INFOPLIST_FILE = "Lingual-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Vocabulate-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Lingual-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -718,7 +718,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB682E7258B38E7702F69103 /* Pods-Vocabulate-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = AB682E7258B38E7702F69103 /* Pods-Lingual-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -728,24 +728,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Vocabulate-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Lingual-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Vocabulate-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Lingual-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vocabulate-tvOS.app/Vocabulate-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lingual-tvOS.app/Lingual-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DA721A87EEDC74979FAFA24 /* Pods-Vocabulate-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 2DA721A87EEDC74979FAFA24 /* Pods-Lingual-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -755,17 +755,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Vocabulate-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Lingual-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Vocabulate-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Lingual-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vocabulate-tvOS.app/Vocabulate-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lingual-tvOS.app/Lingual-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -872,7 +872,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "VocabulateTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "LingualTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -881,7 +881,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Vocabulate" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Lingual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -890,7 +890,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Vocabulate-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Lingual-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -899,7 +899,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Vocabulate-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Lingual-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -908,7 +908,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Vocabulate" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Lingual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
