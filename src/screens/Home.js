@@ -7,13 +7,16 @@ import ListContainer from './../components/ListContainer'
 
 // Load app data
 import { appData } from './../util/DataLoader';
+import GibFAB from '../components/GibFAB';
+import Page from '../components/Page';
 
 export default class Home extends Component {
   render() {
     return (
-      <View>
+      <Page>
         <ListContainer lists={[ appData, ]} />
-      </View>
+        <GibFAB />
+      </Page>
     )
   }
 }
