@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   fab: {
     backgroundColor: AppStyles.color.accent,
     position: 'absolute',
-    margin: 16,
+    margin: 26,
     right: 0,
     bottom: 0,
   },
