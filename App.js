@@ -1,52 +1,32 @@
 import React, { Component } from 'react';
-import {
-  StyleSheet,
-  View,
-  Text,
-
-} from 'react-native';
-
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
-
-import AppStyles from './src/styles/AppStyles'
-
-import Home from './src/screens/Home'
 
 
-const AppNavigator = createStackNavigator(
-  {
-    Home: Home
-  },
-  {
-    initialRouteName: 'Home',
-    defaultNavigationOptions: {
-      headerStyle: {
-        backgroundColor: AppStyles.color.primary,
-        borderBottomWidth: 0,
-      },
-      headerTintColor: '#fff',
-      headerTitleStyle: {
-        fontWeight: 'bold',
-        fontSize: 30,
-        color: AppStyles.color.textLight,
-      },
-    },
-    headerLayoutPreset: 'center'
-  }
-);
+import { createStore } from 'redux';
+import { Provider } from 'react-redux'
 
-const AppContainer = createAppContainer(AppNavigator);
+import lingualApp from './src/store/Reducers'
+import { appData } from './src/util/DataLoader';
 
+import Navigator from './Navigator'
+
+const initialState = {
+  lists: [
+    appData
+  ]
+} // It's beautiful, I love it
+
+const store = createStore(lingualApp, initialState)
 
 export default class App extends Component {
   render() {
-    return <AppContainer />
+    return (
+      <Provider store={store}>
+        <Navigator />
+      </Provider>
+    )
   }
 }
 
 
-const styles = StyleSheet.create({
-  
-});
+
 
