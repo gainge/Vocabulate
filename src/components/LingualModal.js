@@ -18,6 +18,7 @@ export default class LingualModal extends Component {
           isVisible={this.props.isVisible}
           backdropColor={AppStyles.color.inactive}
           onBackdropPress={this.props.onClose}
+          onBackButtonPress={this.props.onClose}
         >
           <View style={styles.modalContentContainer}>
             {this.props.children}

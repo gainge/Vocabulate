@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet } from 'react-native'
+import { Keyboard, View, StyleSheet } from 'react-native'
 import { Input, Button } from 'react-native-elements'
 
 import Strings from '../../assets/data/Strings'
@@ -12,6 +12,11 @@ export default class ListCreation extends Component {
     this.state = {
        listName: ''
     }
+  }
+
+  _onSubmit = () => {
+    Keyboard.dismiss();
+    this.props.onSubmit(this.state.listName)
   }
 
 
@@ -29,7 +34,7 @@ export default class ListCreation extends Component {
           disabled={!this.state.listName}
           containerStyle={styles.submitButtonContainer}
           buttonStyle={styles.submitButton}
-          onPress={() => this.props.onSubmit(this.state.listName)}
+          onPress={this._onSubmit}
         />
       </View>
     )
