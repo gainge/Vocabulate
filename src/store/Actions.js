@@ -1,8 +1,14 @@
 
 
 /* Action Types */
+
+/* LIST */
 export const ADD_LIST = 'ADD_LIST';
 export const REMOVE_LIST = 'REMOVE_LIST';
+
+/* MODAL */
+export const SHOW_MODAL = 'SHOW_MODAL';
+export const HIDE_MODAL = 'HIDE_MODAL';
 
 
 /*
@@ -17,6 +23,7 @@ export const VisibilityFilters = {
 
 
 /* Action Creators */
+/* LIST */
 export function addList(list) {
   return {
     type: ADD_LIST,
@@ -30,6 +37,21 @@ export function removeList(id) {
     id: id,
   }
 }
+
+
+/* MODAL */
+export function showModal() {
+  return {
+    type: SHOW_MODAL,
+  }
+}
+
+export function hideModal() {
+  return {
+    type: HIDE_MODAL,
+  }
+}
+
 
 
 

@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import { Text, View } from 'react-native'
-import PropTypes from 'prop-types'
 
 import { Button } from 'react-native-elements'
 import { connect } from 'react-redux'
@@ -10,42 +8,30 @@ import GibFAB from '../components/GibFAB';
 import Page from '../components/Page';
 import LingualModal from '../components/LingualModal';
 
-// Load app data
+import { showModal, hideModal } from '../store/Actions'
+
 
 class HomeScreen extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      lists: props.lists || [],
-      modalShown: false
-    }
-  }
-
-  _onAddItem = () => {
-    // Just toggle the modal for now
-    this._showModal();
-  }
 
   _showModal = () => {
-    this.setState({ modalShown: true })
+    this.props.showModal();
   }
 
   _hideModal = () => {
-    this.setState({ modalShown: false })
+    this.props.hideModal();
   }
 
 
   render() {
     return (
       <Page>
-        <ListContainer lists={this.state.lists} />
+        <ListContainer lists={this.props.lists} />
         <GibFAB
           onPress={this._showModal}
         />
 
         <LingualModal
-          isVisible={this.state.modalShown}
+          isVisible={this.props.modalShown}
         >
           <Button
             title="Close!"
@@ -59,9 +45,15 @@ class HomeScreen extends Component {
 
 const mapStateToProps = state => ({
   lists: state.lists,
+  modalShown: state.modalShown,
 })
 
-let HomeContainer = connect(mapStateToProps)(HomeScreen)
+const mapDispatchToProps = {
+  showModal,
+  hideModal
+}
+
+let HomeContainer = connect(mapStateToProps, mapDispatchToProps)(HomeScreen)
 
 export default class Home extends Component {
   render() {

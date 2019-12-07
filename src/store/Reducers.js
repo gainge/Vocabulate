@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 
-import { ADD_LIST, REMOVE_LIST } from './Actions'
+import { ADD_LIST, REMOVE_LIST, SHOW_MODAL, HIDE_MODAL } from './Actions'
 
 import List from '../model/List'
 
@@ -18,10 +18,22 @@ function lists(state = [], action) {
   }
 }
 
+function modalShown(state = false, action) {
+  switch (action.type) {
+    case SHOW_MODAL:
+      return true
+    case HIDE_MODAL:
+      return false
+    default:
+      return state
+  }
+}
+
 
 // This is the main ish that handles what we're doing here
 const lingualApp = combineReducers({
   lists,
+  modalShown
 })
 
 export default lingualApp
