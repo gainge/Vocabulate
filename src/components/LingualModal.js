@@ -17,6 +17,7 @@ export default class LingualModal extends Component {
         <Modal
           isVisible={this.props.isVisible}
           backdropColor={AppStyles.color.inactive}
+          onBackdropPress={this.props.onClose}
         >
           <View style={styles.modalContentContainer}>
             {this.props.children}
@@ -33,6 +34,6 @@ const styles = StyleSheet.create({
     padding: 30,
     borderRadius: 10,
     elevation: 10,
-  }
+  },
 })
 
