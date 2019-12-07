@@ -2,14 +2,12 @@ import { combineReducers } from 'redux'
 
 import { ADD_LIST, REMOVE_LIST, SHOW_MODAL, HIDE_MODAL } from './Actions'
 
-import List from '../model/List'
-
 function lists(state = [], action) {
   switch (action.type) {
     case ADD_LIST:
       return [
         ...state,
-        new List(action.id, action.title, action.date, [])
+        action.list,
       ]
     case REMOVE_LIST:
       return state.filter((list) => list.id !== action.id)

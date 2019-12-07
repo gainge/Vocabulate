@@ -2,7 +2,7 @@ import Item from './Item'
 
 
 export default class List {
-  constructor(id, title, creationDate, items) {
+  constructor(id, title, creationDate, items = []) {
     this.id = id;
     this.title = title;
     this.creationDate = creationDate;
