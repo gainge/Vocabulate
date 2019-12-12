@@ -51,12 +51,12 @@ class HomeScreen extends Component {
     // This is where it would be good to structure things by ID
     // I think that we can work on refactoring that later / in a bit
     const selectedList = this.props.lists[index];
-    
+
+    this.props.navigation.navigate('List', {list: selectedList})
 
     // Time to set selected and navigate?
     // Hmmmm, actually maybe we shouldn't be handling the navigation?
     // Actually maybe we should lol
-
   }
 
   render() {

@@ -7,11 +7,13 @@ import { createStackNavigator } from 'react-navigation-stack';
 import AppStyles from './src/styles/AppStyles'
 
 import Home from './src/screens/Home'
+import List from './src/screens/List'
 
 
 const AppNavigator = createStackNavigator(
   {
-    Home: Home
+    Home: Home,
+    List: List,
   },
   {
     initialRouteName: 'Home',
