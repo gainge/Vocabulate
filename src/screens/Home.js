@@ -46,11 +46,23 @@ class HomeScreen extends Component {
     this._hideModal();
   }
 
+  _onSelectList = (index) => {
+    // Select list
+    // This is where it would be good to structure things by ID
+    // I think that we can work on refactoring that later / in a bit
+    const selectedList = this.props.lists[index];
+    
+
+    // Time to set selected and navigate?
+    // Hmmmm, actually maybe we shouldn't be handling the navigation?
+    // Actually maybe we should lol
+
+  }
 
   render() {
     return (
       <Page>
-        <ListContainer lists={this.props.lists} />
+        <ListContainer lists={this.props.lists} onSelect={this._onSelectList} />
         <GibFAB
           onPress={this._showModal}
         />
@@ -85,7 +97,7 @@ let HomeContainer = connect(mapStateToProps, mapDispatchToProps)(HomeScreen)
 export default class Home extends Component {
   render() {
     return (
-      <HomeContainer />
+      <HomeContainer navigation={this.props.navigation} />
     )
   }
 }

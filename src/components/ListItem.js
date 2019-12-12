@@ -1,24 +1,40 @@
 
 import React, { Component } from 'react'
-import { Text, StyleSheet, View } from 'react-native'
+import { Text, StyleSheet, View, TouchableOpacity } from 'react-native'
 import PropTypes from 'prop-types'
+import { Icon, Tooltip } from 'react-native-elements';
 
 import List from '../model/List';
-import HorizontalRule from './HorizontalRule';
 
+import ListDataDisplay from './ListDataDisplay'
 
 export default class ListItem extends Component {
+
+
+  _onMenuPress = () => {
+
+  }
+
   render() {
     let list = this.props.list;
 
     return (
-      <View style={[styles.itemContainer, this.props.style ]}>
-        <Text style={styles.titleWrapper}>
-          <Text>Title: </Text>
-          <Text style={styles.title}>{list.title}</Text>
-        </Text>
-        <HorizontalRule width={1.5} />
-        <Text>Items: {list.items.length}</Text>
+      <View style={[styles.itemContainer, this.props.style]}>
+        <View style={styles.iconContainer}>
+          <Icon
+            name="dots-vertical"
+            type="material-community"
+            size={25}
+            onPress={this._onMenuPress}
+          />
+        </View>
+        <TouchableOpacity
+          activeOpacity={0.3}
+          style={styles.dataContainer}
+          onPress={this.props.onSelect}
+        >
+          <ListDataDisplay  title={list.title} items={list.items} />
+        </TouchableOpacity>
       </View>
     )
   }
@@ -27,14 +43,17 @@ export default class ListItem extends Component {
 const styles = StyleSheet.create({
   itemContainer: {
     padding: 10,
+    flexDirection: 'row'
   },
-  titleWrapper: {
-    fontSize: 20,
+  iconContainer: {
+    alignSelf: 'center',
   },
-  title: {
-    fontStyle: 'italic',
-  }
+  dataContainer: {
+    flex: 1,
+    marginLeft: 10,
+  },
 })
+
 
 
 ListItem.propTypes = {
