@@ -6,17 +6,20 @@
 /* TOPIC */
 export const CREATE_TOPIC_LIST = 'CREATE_TOPIC_LIST';
 export const ADD_TOPIC_TO_LIST = 'ADD_TOPIC_TO_LIST';
+export const REMOVE_TOPIC_FROM_LIST = 'REMOVE_TOPIC_FROM_LIST';
 
 
 /* TOOL */
 export const CREATE_TOOL_LIST = 'CREATE_TOOL_LIST';
 export const ADD_TOOL_TO_LIST = 'ADD_TOOL_TO_LIST';
+export const REMOVE_TOOL_FROM_LIST = 'REMOVE_TOOL_FROM_LIST';
 
 
 
 /* VOCAB */
 export const CREATE_VOCAB_LIST = 'CREATE_VOCAB_LIST';
 export const ADD_VOCAB_TO_LIST = 'ADD_VOCAB_TO_LIST';
+export const REMOVE_VOCAB_FROM_LIST = 'REMOVE_VOCAB_FROM_LIST';
 
 
 
@@ -58,6 +61,14 @@ export function addTopicToList(topic, listID) {
   }
 }
 
+export function removeTopicFromList(topicID, listID) {
+  return {
+    type: REMOVE_TOPIC_FROM_LIST,
+    topicID: topicID,
+    listID: listID,
+  }
+}
+
 
 
 
@@ -77,6 +88,14 @@ export function addToolToList(tool, listID) {
   }
 }
 
+export function removeToolFromList(toolID, listID) {
+  return {
+    type: REMOVE_TOOL_FROM_LIST,
+    toolID: toolID,
+    listID: listID,
+  }
+}
+
 
 
 
@@ -92,6 +111,14 @@ export function addVocabToList(vocab, listID) {
   return {
     type: ADD_VOCAB_TO_LIST,
     vocab: vocab,
+    listID: listID,
+  }
+}
+
+export function removeVocabFromList(vocabID, listID) {
+  return {
+    type: REMOVE_VOCAB_FROM_LIST,
+    vocabID: vocabID,
     listID: listID,
   }
 }
