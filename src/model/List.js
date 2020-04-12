@@ -9,27 +9,12 @@ export default class List {
 
     // Initialize the items from json data
     this.items = [];
-    // Also count up the initial number of learned, heard, etc
-    this.numLearned = 0;
-    this.numHeard = 0;
-    this.numUsed = 0;
 
     if (items) {
       items.forEach(itemJson => {
         let item = Item.deserialize(itemJson);
         this.items.push(item);
-
-        if (item.learned) {
-          this.numLearned++;
-        }
-
-        if (item.heard) {
-          this.numHeard++;
-        }
-
-        if (item.used) {
-          this.numUsed++;
-        }
+        
       });
     }
 
