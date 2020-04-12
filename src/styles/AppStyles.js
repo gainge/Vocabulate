@@ -12,6 +12,10 @@ const AppStyles = {
     background: '#f1f1f1',
     text: '#0b2027',
     textLight: '#ffffff',
+    textLightSecondary: '#f6f1d1',
+    alternateDark: '#5c374c',
+    alternateNeutral: '#c8bfc7',
+    alternateLight: '#f2ecea'
   }
 }
 
