@@ -9,7 +9,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import AppStyles from './src/styles/AppStyles'
 
 import Home from './src/screens/Home'
-import List from './src/screens/List'
+import ListScreen from './src/screens/ListScreen'
 import ListOverview from './src/screens/ListOverview'
 import Settings from './src/screens/Settings'
 import Study from './src/screens/Study'
@@ -55,7 +55,7 @@ const StudyStack = createStackNavigator(
 const ListStack = createStackNavigator(
   {
     ListOverview: ListOverview,
-    List: List,
+    List: ListScreen,
   },
   {
     initialRouteName: 'ListOverview',
