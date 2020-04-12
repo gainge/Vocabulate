@@ -17,6 +17,9 @@ const AppStyles = {
     alternateDark: '#5c374c',
     alternateNeutral: '#c8bfc7',
     alternateLight: '#f2ecea'
+  },
+  fontSize: {
+    tabLabel: 12,
   }
 }
 
