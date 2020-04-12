@@ -16,13 +16,14 @@ const AppStyles = {
     textLightSecondary: '#f6f1d1',
     alternateDark: '#5c374c',
     alternateNeutral: '#c8bfc7',
-    alternateLight: '#f2ecea'
+    alternateLight: '#f2ecea',
+    activeTab: '#e9e9e9'
   },
   fontSize: {
     tabLabel: 12,
   },
   UI: {
-    tabIconSize: 30,
+    tabIconSize: 25,
   }
 }
 
