@@ -20,6 +20,9 @@ const AppStyles = {
   },
   fontSize: {
     tabLabel: 12,
+  },
+  UI: {
+    tabIconSize: 30,
   }
 }
 
