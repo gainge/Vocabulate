@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View } from 'react-native'
-
-import { connect } from 'react-redux'
+import { Text, View, Alert } from 'react-native'
 
 export default class List extends Component {
   render() {
