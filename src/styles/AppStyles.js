@@ -2,6 +2,7 @@ const AppStyles = {
   color: {
     primary: '#40798c',
     primaryLight: '#45a4b5',
+    primaryLightUI: '#53a2be',
     secondary: '#70a9a1',
     tertiary: '#808a9f',
     accent: '#cfd7c7',
