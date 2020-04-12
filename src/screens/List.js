@@ -7,7 +7,7 @@ export default class List extends Component {
   render() {
     return (
       <View>
-        <Text> textInComponent </Text>
+        <Text> Lists! </Text>
       </View>
     )
   }
