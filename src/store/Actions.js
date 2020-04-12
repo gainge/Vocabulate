@@ -5,15 +5,18 @@
 
 /* TOPIC */
 export const CREATE_TOPIC_LIST = 'CREATE_TOPIC_LIST';
+export const ADD_TOPIC_TO_LIST = 'ADD_TOPIC_TO_LIST';
 
 
 /* TOOL */
 export const CREATE_TOOL_LIST = 'CREATE_TOOL_LIST';
+export const ADD_TOOL_TO_LIST = 'ADD_TOOL_TO_LIST';
 
 
 
 /* VOCAB */
 export const CREATE_VOCAB_LIST = 'CREATE_VOCAB_LIST';
+export const ADD_VOCAB_TO_LIST = 'ADD_VOCAB_TO_LIST';
 
 
 
@@ -47,6 +50,14 @@ export function createTopicList(list) {
   }
 }
 
+export function addTopicToList(topic, listID) {
+  return {
+    type: ADD_TOPIC_TO_LIST,
+    topic: topic,
+    listID: listID,
+  }
+}
+
 
 
 
@@ -58,6 +69,14 @@ export function createToolList(list) {
   }
 }
 
+export function addToolToList(tool, listID) {
+  return {
+    type: ADD_TOOL_TO_LIST,
+    tool: tool,
+    listID: listID,
+  }
+}
+
 
 
 
@@ -66,6 +85,14 @@ export function createVocabList(list) {
   return {
     type: CREATE_VOCAB_LIST,
     list: list,
+  }
+}
+
+export function addVocabToList(vocab, listID) {
+  return {
+    type: ADD_VOCAB_TO_LIST,
+    vocab: vocab,
+    listID: listID,
   }
 }
 
