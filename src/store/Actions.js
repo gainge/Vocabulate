@@ -2,6 +2,15 @@
 
 /* Action Types */
 
+export const types = {
+  TOPIC: {
+    CREATE_TOPIC_LIST: 'CREATE_TOPIC_LIST',
+    ADD_TOPIC_TO_LIST: 'ADD_TOPIC_TO_LIST',
+    REMOVE_TOPIC_FROM_LIST: 'REMOVE_TOPIC_FROM_LIST',
+    UPDATE_TOPIC: 'UPDATE_TOPIC',
+  },
+}
+
 
 /* TOPIC */
 export const CREATE_TOPIC_LIST = 'CREATE_TOPIC_LIST';
@@ -72,11 +81,12 @@ export function removeTopicFromList(topicID, listID) {
   }
 }
 
-export function updateTopic(topicID, listID) {
+export function updateTopic(topicID, listID, newTopicData) {
   return {
     type: UPDATE_TOPIC,
     topicID: topicID,
     listID: listID,
+    newTopicData: newTopicData,
   }
 }
 

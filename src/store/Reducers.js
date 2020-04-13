@@ -1,6 +1,14 @@
 import { combineReducers } from 'redux'
 
-import { ADD_LIST, REMOVE_LIST, SHOW_MODAL, HIDE_MODAL } from './Actions'
+import topicsReducer from './reducers/Topics'
+
+import {
+
+  ADD_LIST, REMOVE_LIST,
+  SHOW_MODAL, HIDE_MODAL,
+
+} from './Actions'
+
 
 function lists(state = [], action) {
   switch (action.type) {
@@ -31,7 +39,8 @@ function modalShown(state = false, action) {
 // This is the main ish that handles what we're doing here
 const lingualApp = combineReducers({
   lists,
-  modalShown
+  modalShown,
+  topics: topicsReducer,
 })
 
 export default lingualApp
