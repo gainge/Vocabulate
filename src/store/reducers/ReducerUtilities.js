@@ -30,3 +30,32 @@ export function updateItemInArray(array, itemId, updateItemCallback) {
   return updatedItems
 }
 
+export function addNewList(previousState, newList) {
+  return [
+    ...previousState,
+    newList
+  ]
+}
+
+export function addItemToList(lists, listID, newItem) {
+  return updateItemInArray(lists, listID, (targetList) => {
+    return updateObject(targetList, { items: [ ...targetList.items, newItem ]})
+  })
+}
+
+export function removeItemFromList(lists, listID, itemID) {
+  return updateItemInArray(lists, listID, (targetList) => {
+    return updateObject(targetList, { items: targetList.items.filter(item => item.id !== itemID)})
+  })
+}
+
+export function updateItem(lists, listID, itemID, newItemData) {
+  return updateItemInArray(lists, listID, (targetList) => {
+    const updatedItems = updateItemInArray(targetList.items, itemID, (oldItem) => {
+      return updateObject(oldItem, newItemData);
+    });
+
+    return updateObject(targetList, { items: updatedItems })
+  })
+}
+

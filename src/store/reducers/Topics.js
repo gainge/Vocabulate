@@ -1,34 +1,27 @@
-import { createReducer, updateObject, updateItemInArray } from './ReducerUtilities'
+import {
+  createReducer,
+  addNewList,
+  addItemToList,
+  removeItemFromList,
+  updateItem
+} from './ReducerUtilities'
 import { types } from '../Actions'
 
 
 function createTopicList(topicsState = [], action) {
-  return [
-    ...topicsState,
-    action.list
-  ]
+  return addNewList(topicsState, action.list);
 }
 
 function addTopicToList(topicsState = [], action) {
-  return updateItemInArray(topicsState, action.listID, (topicList) => {
-    return updateObject(topicList, { items: [...topicList.items, action.topic] })
-  })
+  return addItemToList(topicsState, action.listID, action.topic);
 }
 
 function removeTopicFromList(topicsState = [], action) {
-  return updateItemInArray(topicsState, action.listID, (topicList) => {
-    return updateObject(topicList, {items: topicList.items.filter(topic => topic.id !== action.topicID)})
-  })
+  return removeItemFromList(topicsState, action.listID, action.topicID);
 }
 
 function updateTopic(topicsState = [], action) {
-  return updateItemInArray(topicsState, action.listID, (topicList) => {
-    const updatedItems = updateItemInArray(topicList.items, action.topicID, (oldTopic) => {
-      return updateObject(oldTopic, action.newTopicData);
-    });
-
-    return updateObject(topicList, { items: updatedItems })
-  })
+  return updateItem(topicsState, action.listID, action.topicID, action.newTopicData);
 }
 
 
