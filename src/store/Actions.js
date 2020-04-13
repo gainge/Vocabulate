@@ -165,11 +165,12 @@ export function removeVocabFromList(vocabID, listID) {
   }
 }
 
-export function updateVocab(vocabID, listID) {
+export function updateVocab(vocabID, listID, newVocabData) {
   return {
     type: UPDATE_VOCAB,
     vocabID: vocabID,
     listID: listID,
+    newVocabData: newVocabData,
   }
 }
 
