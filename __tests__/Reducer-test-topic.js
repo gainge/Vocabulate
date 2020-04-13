@@ -1,11 +1,11 @@
 import { types } from '../src/store/Actions'
-import topicsReducer from '../src/store/reducers/Topics'
+import topicReducer from '../src/store/reducers/Topics'
 import Topic from '../src/model/Topic'
 import List from '../src/model/List'
 
 describe('Topics Reducer', () => {
   it('should return the initial state', () => {
-    expect(topicsReducer(undefined, {})).toEqual(
+    expect(topicReducer(undefined, {})).toEqual(
       []
     )
   })
@@ -17,7 +17,7 @@ describe('Topics Reducer', () => {
   const updatedList = new List(basicList.id, basicList.title, basicList.creationDate, [ updatedTopic ]);
 
   it('should handle CREATE_TOPIC_LIST', () => {
-    expect(topicsReducer([], {
+    expect(topicReducer([], {
       type: types.TOPIC.CREATE_TOPIC_LIST,
       list: basicList
     })).toEqual([
@@ -29,7 +29,7 @@ describe('Topics Reducer', () => {
   // pretty sick
 
   it('should handle ADD_TOPIC_TO_LIST', () => {
-    expect(topicsReducer([
+    expect(topicReducer([
       basicList
     ], {
       type: types.TOPIC.ADD_TOPIC_TO_LIST,
@@ -42,7 +42,7 @@ describe('Topics Reducer', () => {
 
 
   it('should handle REMOVE_TOPIC_FROM_LIST', () => {
-    expect(topicsReducer([
+    expect(topicReducer([
       addedList
     ], {
       type: types.TOPIC.REMOVE_TOPIC_FROM_LIST,
@@ -55,7 +55,7 @@ describe('Topics Reducer', () => {
 
 
   it('should handle UPDATE_TOPIC', () => {
-    expect(topicsReducer([
+    expect(topicReducer([
       addedList
     ], {
       type: types.TOPIC.UPDATE_TOPIC,

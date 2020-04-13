@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 
-import topicsReducer from './reducers/Topics'
+import topicReducer from './reducers/Topics'
 
 import {
 
@@ -40,7 +40,7 @@ function modalShown(state = false, action) {
 const lingualApp = combineReducers({
   lists,
   modalShown,
-  topics: topicsReducer,
+  topics: topicReducer,
 })
 
 export default lingualApp
