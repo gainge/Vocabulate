@@ -27,8 +27,6 @@ describe('Tools Reducer', () => {
     ]);
   })
 
-  // Man I guess you could probably extract a lot of these states in to constants too huh
-  // pretty sick
 
   it('should handle ADD_TOOL_TO_LIST', () => {
     expect(toolReducer([
