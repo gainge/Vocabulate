@@ -2,6 +2,7 @@ import { combineReducers } from 'redux'
 
 import topicReducer from './reducers/Topics'
 import toolReducer from './reducers/Tools'
+import vocabReducer from './reducers/Vocab'
 
 import {
 
@@ -43,6 +44,7 @@ const lingualApp = combineReducers({
   modalShown,
   topics: topicReducer,
   tools: toolReducer,
+  vocab: vocabReducer,
 })
 
 export default lingualApp
