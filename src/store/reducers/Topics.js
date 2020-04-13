@@ -11,20 +11,20 @@ function createTopicList(topicsState = [], action) {
 
 function addTopicToList(topicsState = [], action) {
   return updateItemInArray(topicsState, action.listID, (topicList) => {
-    updateObject(topicList, {items: [...topicList.items, action.topic]})
+    return updateObject(topicList, { items: [...topicList.items, action.topic] })
   })
 }
 
 function removeTopicFromList(topicsState = [], action) {
   return updateItemInArray(topicsState, action.listID, (topicList) => {
-    updateObject(topicList, {items: topicList.items.filter(topic => topic.id !== action.topicID)})
+    return updateObject(topicList, {items: topicList.items.filter(topic => topic.id !== action.topicID)})
   })
 }
 
 function updateTopic(topicsState = [], action) {
   return updateItemInArray(topicsState, action.listID, (topicList) => {
-    updateItemInArray(topicList.items, action.topicID, (oldTopic) => {
-      updateObject(oldTopic, action.newTopicData);
+    return updateItemInArray(topicList.items, action.topicID, (oldTopic) => {
+      return updateObject(oldTopic, action.newTopicData);
     })
   })
 }
