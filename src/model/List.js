@@ -8,15 +8,7 @@ export default class List {
     this.creationDate = creationDate;
 
     // Initialize the items from json data
-    this.items = [];
-
-    if (items) {
-      items.forEach(itemJson => {
-        let item = Item.deserialize(itemJson);
-        this.items.push(item);
-        
-      });
-    }
+    this.items = items;
 
     // Now we done?
   }
