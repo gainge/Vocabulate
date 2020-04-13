@@ -25,7 +25,7 @@ function updateTool(toolsState = [], action) {
 }
 
 
-const toolReducer = createReducer({
+const toolReducer = createReducer([], {
   [types.TOOL.CREATE_TOOL_LIST]: createToolList,
   [types.TOOL.ADD_TOOL_TO_LIST]: addToolToList,
   [types.TOOL.REMOVE_TOOL_FROM_LIST]: removeToolFromList,
