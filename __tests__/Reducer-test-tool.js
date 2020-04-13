@@ -1,4 +1,4 @@
-import { types, updateTool } from '../src/store/Actions';
+import { types } from '../src/store/Actions';
 import toolReducer from '../src/store/reducers/Tools';
 import Tool from '../src/model/Tool';
 import List from '../src/model/List';
