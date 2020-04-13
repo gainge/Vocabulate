@@ -23,9 +23,11 @@ function removeTopicFromList(topicsState = [], action) {
 
 function updateTopic(topicsState = [], action) {
   return updateItemInArray(topicsState, action.listID, (topicList) => {
-    return updateItemInArray(topicList.items, action.topicID, (oldTopic) => {
+    const updatedItems = updateItemInArray(topicList.items, action.topicID, (oldTopic) => {
       return updateObject(oldTopic, action.newTopicData);
-    })
+    });
+
+    return updateObject(topicList, { items: updatedItems })
   })
 }
 
