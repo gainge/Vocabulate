@@ -67,25 +67,6 @@ describe('Topics Reducer', () => {
     ])
   })
 
-  // console.log(topicsReducer([
-  //   addedList
-  // ], {
-  //   type: types.TOPIC.UPDATE_TOPIC,
-  //   topicID: newTopic.id,
-  //   listID: basicList.id,
-  //   newTopicData: updatedTopic
-  // }))
-
-
-  // console.log(topicsReducer([
-  //   basicList
-  // ], {
-  //   type: types.TOPIC.ADD_TOPIC_TO_LIST,
-  //   topic: newTopic,
-  //   listID: basicList.id,
-  // }))
-
-
 })
 
 
