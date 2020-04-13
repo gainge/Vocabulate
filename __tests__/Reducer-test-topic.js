@@ -7,6 +7,27 @@ describe('Topics Reducer', () => {
       []
     )
   })
+
+  it('should handle CREATE_TOPIC_LIST', () => {
+    expect(topicsReducer([], {
+      type: actions.CREATE_TOPIC_LIST,
+      list: {
+        id: 1,
+        title: 'test list',
+        creationDate: 0,
+        items: []
+      }
+    })).toEqual([
+      {
+        id: 1,
+        title: 'test list',
+        creationDate: 0,
+        items: []
+      }
+    ]);
+  })
+
+
 })
 
 
