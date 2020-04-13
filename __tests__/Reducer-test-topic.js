@@ -14,6 +14,7 @@ describe('Topics Reducer', () => {
   const updatedTopic = new Topic(newTopic.id, 'Writing tests feels great!')
   const basicList = new List(1, 'test list', 0, []);
   const addedList = new List(basicList.id, basicList.title, basicList.creationDate, [ newTopic ]);
+  const updatedList = new List(basicList.id, basicList.title, basicList.creationDate, [ updatedTopic ]);
 
   it('should handle CREATE_TOPIC_LIST', () => {
     expect(topicsReducer([], {
@@ -52,6 +53,37 @@ describe('Topics Reducer', () => {
     ])
   })
 
+
+  it('should handle UPDATE_TOPIC', () => {
+    expect(topicsReducer([
+      addedList
+    ], {
+      type: types.TOPIC.UPDATE_TOPIC,
+      topicID: newTopic.id,
+      listID: basicList.id,
+      newTopicData: updatedTopic,
+    })).toEqual([
+      updatedList
+    ])
+  })
+
+  // console.log(topicsReducer([
+  //   addedList
+  // ], {
+  //   type: types.TOPIC.UPDATE_TOPIC,
+  //   topicID: newTopic.id,
+  //   listID: basicList.id,
+  //   newTopicData: updatedTopic
+  // }))
+
+
+  // console.log(topicsReducer([
+  //   basicList
+  // ], {
+  //   type: types.TOPIC.ADD_TOPIC_TO_LIST,
+  //   topic: newTopic,
+  //   listID: basicList.id,
+  // }))
 
 
 })
