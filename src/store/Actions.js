@@ -123,11 +123,12 @@ export function removeToolFromList(toolID, listID) {
   }
 }
 
-export function updateTool(toolID, listID) {
+export function updateTool(toolID, listID, newToolData) {
   return {
     type: UPDATE_TOOL,
     toolID: toolID,
     listID: listID,
+    newToolData: newToolData,
   }
 }
 
