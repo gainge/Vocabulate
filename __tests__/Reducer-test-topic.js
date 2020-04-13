@@ -11,8 +11,9 @@ describe('Topics Reducer', () => {
   })
 
   const newTopic = new Topic(1, 'How does writing tests feel?');
+  const updatedTopic = new Topic(newTopic.id, 'Writing tests feels great!')
   const basicList = new List(1, 'test list', 0, []);
-  const addedList = new List(1, 'test list', 0, [ newTopic ]);
+  const addedList = new List(basicList.id, basicList.title, basicList.creationDate, [ newTopic ]);
 
   it('should handle CREATE_TOPIC_LIST', () => {
     expect(topicsReducer([], {
@@ -50,6 +51,7 @@ describe('Topics Reducer', () => {
       basicList
     ])
   })
+
 
 
 })
