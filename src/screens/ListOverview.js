@@ -13,9 +13,53 @@ import { showModal, hideModal, addList } from '../store/Actions'
 
 import { uuid } from '../util/UUID'
 import List from '../model/List'
+import { Button } from 'react-native-elements';
+import TabBar from '../components/TabBar';
 
+
+const TOPICS = 0;
+const TOOLS = 1;
+const VOCAB = 2;
+
+const tabs = [
+  {
+    label: 'Topics',
+  },
+  {
+    label: 'Tools',
+  },
+  {
+    label: 'Vocab',
+  }
+]
 
 class ListOverViewScreen extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      counter: 0,
+      activeTab: 0,
+      lists: this.props.topics,
+
+    }
+  }
+
+  render() {
+    return (
+      <Page>
+        <TabBar tabs={tabs} activeTab={this.state.activeTab} />
+        <ListContainer lists={this.state.lists} />
+        {/* <Text>{this.state.counter}</Text>
+        <Button title="increment!" onPress={() => this.setState({counter: this.state.counter + 1})} />
+        <Text># Vocab Terms: {this.props.vocab[0].items.length}</Text> */}
+      </Page>
+    )
+  }
+}
+
+
+class OldListOverViewScreen extends Component {
   _showModal = () => {
     this.props.showModal();
   }
@@ -85,11 +129,19 @@ class ListOverViewScreen extends Component {
 
 
 const mapStateToProps = state => ({
+  topics: state.topics,
+  tools: state.tools,
+  vocab: state.vocab,
+
   lists: state.lists,
   modalShown: state.modalShown,
 })
 
 const mapDispatchToProps = {
+  // TODO: add dispatch actions for like, adding and editing stuff
+  // but that's a little bit more mid-term for where we're at right now
+  // how about we just focus on getting things rendered.
+
   showModal,
   hideModal,
   addList,
