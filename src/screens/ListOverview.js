@@ -45,10 +45,33 @@ class ListOverViewScreen extends Component {
     }
   }
 
+  _onSelectTab = (tabIndex) => {
+    let newActiveTab = this.state.activeTab;
+    let newLists = this.state.lists;
+    switch (tabIndex) {
+      case TOPICS:
+        newActiveTab = TOPICS;
+        newLists = this.props.topics;
+        break;
+      case TOOLS:
+        newActiveTab = TOOLS;
+        newLists = this.props.tools;
+        break;
+      case VOCAB:
+        newActiveTab = VOCAB;
+        newLists = this.props.vocab;
+        break;
+      default:
+        return;
+    }
+
+    this.setState({ activeTab: newActiveTab, lists: newLists });
+  }
+
   render() {
     return (
       <Page>
-        <TabBar tabs={tabs} activeTab={this.state.activeTab} />
+        <TabBar tabs={tabs} activeTab={this.state.activeTab} onSelectTab={this._onSelectTab} />
         <ListContainer lists={this.state.lists} />
         {/* <Text>{this.state.counter}</Text>
         <Button title="increment!" onPress={() => this.setState({counter: this.state.counter + 1})} />
