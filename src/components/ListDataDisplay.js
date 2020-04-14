@@ -6,12 +6,12 @@ import HorizontalRule from './HorizontalRule';
 const ListDataDisplay = (props) => {
   return (
     <View style={[props.style]}>
-        <Text style={styles.titleWrapper}>
-          <Text style={styles.title}>{props.title}</Text>
-        </Text>
-        <HorizontalRule width={1.5} />
-        <Text>Items: {props.items.length}</Text>
-      </View>
+      <Text style={styles.titleWrapper}>
+        <Text style={styles.title}>{props.title}</Text>
+      </Text>
+      <HorizontalRule width={1.5} />
+      <Text>Items: {props.items.length}</Text>
+    </View>
   )
 }
 
