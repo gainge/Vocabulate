@@ -7,7 +7,6 @@ const ListDataDisplay = (props) => {
   return (
     <View style={[props.style]}>
         <Text style={styles.titleWrapper}>
-          <Text>Title: </Text>
           <Text style={styles.title}>{props.title}</Text>
         </Text>
         <HorizontalRule width={1.5} />
