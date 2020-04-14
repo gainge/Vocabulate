@@ -1,0 +1,22 @@
+{
+    "id": 1,
+    "title": "Demo Vocab 1",
+    "creationDate": 1574283948063,
+    "items": [
+        {
+            "id": 2,
+            "term": "たべる",
+            "definition": "to eat"
+        },
+        {
+            "id": 3,
+            "term": "つくえ",
+            "definition": "desk"
+        },
+        {
+            "id": 4,
+            "term": "ばんぐみ",
+            "definition": "broadcast"
+        }
+    ]
+}

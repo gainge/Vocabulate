@@ -3,29 +3,29 @@
     "title": "Demo List 1",
     "creationDate": 1574283948063,
     "items": [
-      {
-        "id": 2,
-        "term": "たべる",
-        "definition": "to eat",
-        "learned": false,
-        "heard": false,
-        "used": false
-      },
-      {
-        "id": 3,
-        "term": "つくえ",
-        "definition": "desk",
-        "learned": false,
-        "heard": false,
-        "used": false
-      },
-      {
-        "id": 4,
-        "term": "ばんぐみ",
-        "definition": "broadcast",
-        "learned": false,
-        "heard": false,
-        "used": false
-      }
+        {
+            "id": 2,
+            "term": "たべる",
+            "definition": "to eat",
+            "learned": false,
+            "heard": false,
+            "used": false
+        },
+        {
+            "id": 3,
+            "term": "つくえ",
+            "definition": "desk",
+            "learned": false,
+            "heard": false,
+            "used": false
+        },
+        {
+            "id": 4,
+            "term": "ばんぐみ",
+            "definition": "broadcast",
+            "learned": false,
+            "heard": false,
+            "used": false
+        }
     ]
-  }
+}

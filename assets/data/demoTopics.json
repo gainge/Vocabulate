@@ -1,0 +1,27 @@
+{
+    "id": 1,
+    "title": "Demo Topics List",
+    "creationDate": 1574283948063,
+    "items": [
+        {
+            "id": 2,
+            "body": "What's your favorite song?"
+        },
+        {
+            "id": 3,
+            "body": "What is your dream vacation?"
+        },
+        {
+            "id": 4,
+            "body": "Talk about a time where you made a big accomplishment"
+        },
+        {
+            "id": 5,
+            "body": "Do you think there is an afterlife?"
+        },
+        {
+            "id": 6,
+            "body": "How would you react to the zombie apocalypse?"
+        }
+    ]
+}

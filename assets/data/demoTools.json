@@ -1,0 +1,32 @@
+{
+    "id": 1,
+    "title": "Demo Tools List",
+    "creationDate": 1574283948063,
+    "items": [
+        {
+            "id": 2,
+            "title": "かた",
+            "body": "Some stuff"
+        },
+        {
+            "id": 3,
+            "title": "〜たい",
+            "body": "Some stuff"
+        },
+        {
+            "id": 4,
+            "title": "〜てから",
+            "body": "Some stuff"
+        },
+        {
+            "id": 5,
+            "title": "たらいいと思う",
+            "body": "Some stuff"
+        },
+        {
+            "id": 6,
+            "title": "うちに",
+            "body": "Some stuff"
+        }
+    ]
+}
