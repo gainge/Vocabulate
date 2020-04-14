@@ -21,7 +21,6 @@ const TabBar = (props) => {
 const styles = StyleSheet.create({
   tabBar: {
     flexDirection: 'row',
-    // justifyContent: 'space-around',
     borderColor: AppStyles.color.tertiary,
     borderRadius: 2,
     borderWidth: 2,
@@ -33,7 +32,7 @@ const styles = StyleSheet.create({
   },
   tab: {
     padding: 7,
-    width: '33%',
+    flex: 1,
     textAlign: 'center',
   },
   activeTab: {
