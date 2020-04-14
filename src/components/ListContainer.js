@@ -10,8 +10,14 @@ export default class ListContainer extends Component {
     return `${item.id}-${index}-${item.title}`;
   }
 
+  _onSelect = (itemIndex) => {
+    if (this.props.onSelect) {
+      this.props.onSelect(itemIndex);
+    }
+  }
+
   _renderItem = (item) => {
-    return <ListItem list={item.item} onSelect={() => this.props.onSelect(item.index)} />
+    return <ListItem list={item.item} onSelect={() => this._onSelect(item.index)} />
   }
 
   render() {
