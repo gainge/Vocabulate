@@ -24,29 +24,6 @@ export const types = {
 }
 
 
-/* TOPIC */
-export const CREATE_TOPIC_LIST = 'CREATE_TOPIC_LIST';
-export const ADD_TOPIC_TO_LIST = 'ADD_TOPIC_TO_LIST';
-export const REMOVE_TOPIC_FROM_LIST = 'REMOVE_TOPIC_FROM_LIST';
-export const UPDATE_TOPIC = 'UPDATE_TOPIC';
-
-
-/* TOOL */
-export const CREATE_TOOL_LIST = 'CREATE_TOOL_LIST';
-export const ADD_TOOL_TO_LIST = 'ADD_TOOL_TO_LIST';
-export const REMOVE_TOOL_FROM_LIST = 'REMOVE_TOOL_FROM_LIST';
-export const UPDATE_TOOL = 'UPDATE_TOOL';
-
-
-
-/* VOCAB */
-export const CREATE_VOCAB_LIST = 'CREATE_VOCAB_LIST';
-export const ADD_VOCAB_TO_LIST = 'ADD_VOCAB_TO_LIST';
-export const REMOVE_VOCAB_FROM_LIST = 'REMOVE_VOCAB_FROM_LIST';
-export const UPDATE_VOCAB = 'UPDATE_VOCAB';
-
-
-
 /* LIST */
 export const ADD_LIST = 'ADD_LIST';
 export const REMOVE_LIST = 'REMOVE_LIST';
@@ -72,14 +49,14 @@ export const VisibilityFilters = {
 /* TOPIC */
 export function createTopicList(list) {
   return {
-    type: CREATE_TOPIC_LIST,
+    type: types.TOPIC.CREATE_TOPIC_LIST,
     list: list,
   }
 }
 
 export function addTopicToList(topic, listID) {
   return {
-    type: ADD_TOPIC_TO_LIST,
+    type: types.TOPIC.ADD_TOPIC_TO_LIST,
     topic: topic,
     listID: listID,
   }
@@ -87,7 +64,7 @@ export function addTopicToList(topic, listID) {
 
 export function removeTopicFromList(topicID, listID) {
   return {
-    type: REMOVE_TOPIC_FROM_LIST,
+    type: types.TOPIC.REMOVE_TOPIC_FROM_LIST,
     topicID: topicID,
     listID: listID,
   }
@@ -95,7 +72,7 @@ export function removeTopicFromList(topicID, listID) {
 
 export function updateTopic(topicID, listID, newTopicData) {
   return {
-    type: UPDATE_TOPIC,
+    type: types.TOPIC.UPDATE_TOPIC,
     topicID: topicID,
     listID: listID,
     newTopicData: newTopicData,
@@ -108,14 +85,14 @@ export function updateTopic(topicID, listID, newTopicData) {
 /* TOOL */
 export function createToolList(list) {
   return {
-    type: CREATE_TOOL_LIST,
+    type: types.TOOL.CREATE_TOOL_LIST,
     list: list,
   }
 }
 
 export function addToolToList(tool, listID) {
   return {
-    type: ADD_TOOL_TO_LIST,
+    type: types.TOOL.ADD_TOOL_TO_LIST,
     tool: tool,
     listID: listID,
   }
@@ -123,7 +100,7 @@ export function addToolToList(tool, listID) {
 
 export function removeToolFromList(toolID, listID) {
   return {
-    type: REMOVE_TOOL_FROM_LIST,
+    type: types.TOOL.REMOVE_TOOL_FROM_LIST,
     toolID: toolID,
     listID: listID,
   }
@@ -131,7 +108,7 @@ export function removeToolFromList(toolID, listID) {
 
 export function updateTool(toolID, listID, newToolData) {
   return {
-    type: UPDATE_TOOL,
+    type: types.TOOL.UPDATE_TOOL,
     toolID: toolID,
     listID: listID,
     newToolData: newToolData,
@@ -144,14 +121,14 @@ export function updateTool(toolID, listID, newToolData) {
 /* VOCAB */
 export function createVocabList(list) {
   return {
-    type: CREATE_VOCAB_LIST,
+    type: types.VOCAB.CREATE_VOCAB_LIST,
     list: list,
   }
 }
 
 export function addVocabToList(vocab, listID) {
   return {
-    type: ADD_VOCAB_TO_LIST,
+    type: types.VOCAB.ADD_VOCAB_TO_LIST,
     vocab: vocab,
     listID: listID,
   }
@@ -159,7 +136,7 @@ export function addVocabToList(vocab, listID) {
 
 export function removeVocabFromList(vocabID, listID) {
   return {
-    type: REMOVE_VOCAB_FROM_LIST,
+    type: types.VOCAB.REMOVE_VOCAB_FROM_LIST,
     vocabID: vocabID,
     listID: listID,
   }
@@ -167,7 +144,7 @@ export function removeVocabFromList(vocabID, listID) {
 
 export function updateVocab(vocabID, listID, newVocabData) {
   return {
-    type: UPDATE_VOCAB,
+    type: types.VOCAB.UPDATE_VOCAB,
     vocabID: vocabID,
     listID: listID,
     newVocabData: newVocabData,
