@@ -16,9 +16,9 @@ const demoVocabJson = require('../../assets/data/demoVocab.json');
 
 const appData = List.deserialize(jsonData);
 
-const demoTopics = List.deserialize(demoTopicsJson, Topic.deserialize);
-const demoTools = List.deserialize(demoToolsJson, Tool.deserialize);
-const demoVocab = List.deserialize(demoVocabJson, Vocab.deserialize);
+const demoTopics = [ List.deserialize(demoTopicsJson, Topic.deserialize) ];
+const demoTools = [ List.deserialize(demoToolsJson, Tool.deserialize) ];
+const demoVocab = [ List.deserialize(demoVocabJson, Vocab.deserialize) ];
 
 console.log(demoTopics);
 console.log(demoTools);
