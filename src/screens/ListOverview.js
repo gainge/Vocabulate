@@ -16,50 +16,27 @@ import constants from '../util/Constants'
 import List from '../model/List'
 import TabBar from '../components/TabBar';
 
-const tabs = [
-  {
-    label: 'Topics',
-  },
-  {
-    label: 'Tools',
-  },
-  {
-    label: 'Vocab',
-  }
-]
-
 class ListOverViewScreen extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      activeTab: constants.TOPICS,
-      lists: this.props.topics,
+    const tabs = [
+      { label: constants.TOPICS },
+      { label: constants.TOOLS },
+      { label: constants.VOCAB},
+    ]
 
+    this.state = {
+      tabs: tabs,
+      datasets: props.datasets,
+      activeTabIndex: 0
     }
   }
 
   _onSelectTab = (tabIndex) => {
-    let newActiveTab = this.state.activeTab;
-    let newLists = this.state.lists;
-    switch (tabIndex) {
-      case constants.TOPICS:
-        newActiveTab = constants.TOPICS;
-        newLists = this.props.topics;
-        break;
-      case constants.TOOLS:
-        newActiveTab = constants.TOOLS;
-        newLists = this.props.tools;
-        break;
-      case constants.VOCAB:
-        newActiveTab = constants.VOCAB;
-        newLists = this.props.vocab;
-        break;
-      default:
-        return;
-    }
+    let newActiveTab = tabIndex;
 
-    this.setState({ activeTab: newActiveTab, lists: newLists });
+    this.setState({ activeTabIndex: newActiveTab });
   }
 
   _onSelectListItem = (itemIndex) => {
@@ -73,11 +50,11 @@ class ListOverViewScreen extends Component {
   render() {
     return (
       <Page>
-        <TabBar tabs={tabs} activeTab={this.state.activeTab} onSelectTab={this._onSelectTab} />
+        <TabBar tabs={this.state.tabs} activeTab={this.state.activeTabIndex} onSelectTab={this._onSelectTab} />
         <ListContainer
           onSelect={this._onSelectListItem}
           onAddItem={this._onAddItem}
-          listData={this.state.lists}
+          listData={this.state.datasets[this.state.activeTabIndex]}
         />
       </Page>
     )
@@ -155,9 +132,11 @@ class OldListOverViewScreen extends Component {
 
 
 const mapStateToProps = state => ({
-  topics: state.topics,
-  tools: state.tools,
-  vocab: state.vocab,
+  datasets: [
+    state.topics,
+    state.tools,
+    state.vocab,
+  ],
 
   lists: state.lists,
   modalShown: state.modalShown,
