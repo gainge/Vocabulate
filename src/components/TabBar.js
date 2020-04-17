@@ -2,28 +2,41 @@ import React from 'react'
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import AppStyles from '../styles/AppStyles'
 
+
+const Tab = (props) => {
+  const { label, active, ...rest } = props;
+
+  const content = <Text style={[styles.tabHeader, (!active && styles.activeTabHeader)]} >{label}</Text>
+
+  if (active) {
+    return (
+      <View {...rest} style={[ props.style, styles.activeTab ]} >
+        {content}
+      </View>
+    )
+  } else {
+    return (
+      <TouchableOpacity {...rest} >
+        {content}
+      </TouchableOpacity>
+    )
+  }
+}
+
 const TabBar = (props) => {
   return (
     <View style={styles.tabBar} >
       {
         props.tabs.map((tab, index) => {
-          if (index === props.activeTab) {
-            return (
-              <View key={tab.label} style={[styles.tab, styles.activeTab ]} >
-                <Text style={[styles.tabHeader, styles.activeTabHeader ]}>{tab.label}</Text>
-              </View>
-            )
-          } else {
-            return (
-              <TouchableOpacity
-                key={tab.label}
-                style={styles.tab}
-                onPress={() => (props.onSelectTab) && props.onSelectTab(index)}
-                >
-                <Text style={styles.tabHeader}>{tab.label}</Text>
-              </TouchableOpacity>
-            )
-          }
+          return (
+            <Tab
+              key={tab.label}
+              label={tab.label}
+              style={styles.tab}
+              active={(index === props.activeTab)}
+              onPress={() => (props.onSelectTab) && props.onSelectTab(index)}
+            />
+          )
         })
       }
     </View>
