@@ -12,14 +12,9 @@ import ListCreation from '../components/ListCreation';
 import { showModal, hideModal, addList } from '../store/Actions'
 
 import { uuid } from '../util/UUID'
+import constants from '../util/Constants'
 import List from '../model/List'
-import { Button } from 'react-native-elements';
 import TabBar from '../components/TabBar';
-
-
-const TOPICS = 0;
-const TOOLS = 1;
-const VOCAB = 2;
 
 const tabs = [
   {
@@ -38,8 +33,7 @@ class ListOverViewScreen extends Component {
     super(props);
 
     this.state = {
-      counter: 0,
-      activeTab: 0,
+      activeTab: constants.TOPICS,
       lists: this.props.topics,
 
     }
@@ -49,16 +43,16 @@ class ListOverViewScreen extends Component {
     let newActiveTab = this.state.activeTab;
     let newLists = this.state.lists;
     switch (tabIndex) {
-      case TOPICS:
-        newActiveTab = TOPICS;
+      case constants.TOPICS:
+        newActiveTab = constants.TOPICS;
         newLists = this.props.topics;
         break;
-      case TOOLS:
-        newActiveTab = TOOLS;
+      case constants.TOOLS:
+        newActiveTab = constants.TOOLS;
         newLists = this.props.tools;
         break;
-      case VOCAB:
-        newActiveTab = VOCAB;
+      case constants.VOCAB:
+        newActiveTab = constants.VOCAB;
         newLists = this.props.vocab;
         break;
       default:
@@ -69,7 +63,7 @@ class ListOverViewScreen extends Component {
   }
 
   _onSelectListItem = (itemIndex) => {
-    console.log(`Selected ${itemIndex}!`);
+    // Navigate to list screen, providing the selected list ID and model type?
   }
 
   _onAddItem = () => {
