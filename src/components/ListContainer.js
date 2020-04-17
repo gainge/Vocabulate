@@ -17,6 +17,12 @@ export default class ListContainer extends Component {
     }
   }
 
+  _onAddItem = () => {
+    if (this.props.onAddItem) {
+      this.props.onAddItem();
+    }
+  }
+
   _renderItem = (item) => {
     return <ListItem list={item.item} onSelect={() => this._onSelect(item.index)} />
   }
@@ -31,7 +37,7 @@ export default class ListContainer extends Component {
         />
         <GibFAB
           style={[this.props.FABStyle]}
-          onPress={() => (this.props.onAddItem) && this.props.onAddItem()}
+          onPress={() => this._onAddItem()}
         />
       </View>
     )
