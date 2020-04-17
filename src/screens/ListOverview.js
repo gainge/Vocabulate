@@ -41,10 +41,19 @@ class ListOverViewScreen extends Component {
 
   _onSelectListItem = (itemIndex) => {
     // Navigate to list screen, providing the selected list ID and model type?
+    // I guess we pass in the label or something?
+    const currentListID = this.state.datasets[this.state.activeTabIndex][itemIndex].id;
+    console.log(currentListID);
+
+    this.props.navigation.navigate('List', { listID: currentListID, modelType: this._getCurrentListType() });
   }
 
   _onAddItem = () => {
     console.log('Heyo, you tryna add my guy?');
+  }
+
+  _getCurrentListType = () => {
+    return this.state.tabs[this.state.activeTabIndex].label;
   }
 
   render() {
