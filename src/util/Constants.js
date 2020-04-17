@@ -1,7 +1,7 @@
 const contants = {
-  TOPICS: 0,
-  TOOLS: 1,
-  VOCAB: 2,
+  TOPICS: 'Topics',
+  TOOLS: 'Tools',
+  VOCAB: 'Vocab',
 }
 
 
