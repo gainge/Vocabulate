@@ -68,14 +68,23 @@ class ListOverViewScreen extends Component {
     this.setState({ activeTab: newActiveTab, lists: newLists });
   }
 
+  _onSelectListItem = (itemIndex) => {
+    console.log(`Selected ${itemIndex}!`);
+  }
+
+  _onAddItem = () => {
+    console.log('Heyo, you tryna add my guy?');
+  }
+
   render() {
     return (
       <Page>
         <TabBar tabs={tabs} activeTab={this.state.activeTab} onSelectTab={this._onSelectTab} />
-        <ListContainer lists={this.state.lists} />
-        {/* <Text>{this.state.counter}</Text>
-        <Button title="increment!" onPress={() => this.setState({counter: this.state.counter + 1})} />
-        <Text># Vocab Terms: {this.props.vocab[0].items.length}</Text> */}
+        <ListContainer
+          onSelect={this._onSelectListItem}
+          onAddItem={this._onAddItem}
+          listData={this.state.lists}
+        />
       </Page>
     )
   }

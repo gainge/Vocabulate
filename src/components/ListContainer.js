@@ -31,7 +31,7 @@ export default class ListContainer extends Component {
     return (
       <View style={[styles.container, this.props.containerStyle]}>
         <FlatList
-          data={this.props.lists}
+          data={this.props.listData}
           renderItem={this._renderItem}
           keyExtractor={this._keyExtractor}
         />
@@ -51,6 +51,6 @@ const styles = StyleSheet.create({
 })
 
 ListContainer.propTypes = {
-  lists: PropTypes.array.isRequired,
+  listData: PropTypes.array.isRequired,
 }
 
