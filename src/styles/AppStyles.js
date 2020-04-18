@@ -5,6 +5,7 @@ const AppStyles = {
     primaryLightUI: '#53a2be',
     secondary: '#70a9a1',
     tertiary: '#808a9f',
+    tertiaryLight: '#b2b8c5',
     accent: '#cfd7c7',
     accentLight: '#f6f1d1',
     error: '#CC3838',

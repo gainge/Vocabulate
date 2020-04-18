@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     borderRadius: 3,
   },
   [TOPICS]: {
-    backgroundColor: AppStyles.color.alternateMid,
+    backgroundColor: AppStyles.color.tertiaryLight,
   },
   [TOOLS]: {
     backgroundColor: AppStyles.color.alternateNeutral,
