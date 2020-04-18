@@ -5,6 +5,9 @@ import ListContainer from '../components/ListContainer';
 import Page from '../components/Page';
 
 import { TOPICS, TOOLS, VOCAB } from '../util/Constants'
+import TopicListItem from '../components/TopicListItem';
+import ToolListItem from '../components/ToolListItem';
+import VocabListItem from '../components/VocabListItem';
 
 export default class ListScreen extends Component {
   constructor(props) {
@@ -24,11 +27,11 @@ export default class ListScreen extends Component {
     // This is where we need to reflect on the model type, yeah?
     switch (this.state.modelType) {
       case TOPICS:
-        return <Text>It's a topic, I guess</Text>
+        return <TopicListItem topic={item} />
       case TOOLS:
-        return <Text>Got a tool for ya!</Text>
+        return <ToolListItem tool={item} />
       case VOCAB:
-        return <Text>Here's some vocab my guy</Text>
+        return <VocabListItem vocab={item} />
       default:
         return <Text>I have no idea what this is</Text>
     }
