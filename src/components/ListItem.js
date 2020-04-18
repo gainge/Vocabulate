@@ -16,6 +16,19 @@ export default class ListItem extends Component {
   }
 
   render() {
+
+    let content = this.props.content;
+
+    // Optionally wrap content in touchable opacity based on onSelect callback
+    if (this.props.onSelect) {
+      content = (
+        <TouchableOpacity activeOpacity={0.3} onPress={this.props.onSelect} >
+          {content}
+        </TouchableOpacity>
+      )
+    }
+
+    // Return list item component
     return (
       <View style={[styles.itemContainer, this.props.style]}>
         <View style={styles.iconContainer}>
@@ -26,13 +39,9 @@ export default class ListItem extends Component {
             onPress={this._onMenuPress}
           />
         </View>
-        <TouchableOpacity
-          activeOpacity={0.3}
-          style={styles.dataContainer}
-          onPress={this.props.onSelect}
-        >
-          {this.props.content}
-        </TouchableOpacity>
+        <View style={styles.dataContainer}>
+          {content}
+        </View>
       </View>
     )
   }
