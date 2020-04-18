@@ -26,8 +26,14 @@ export default class ListContainer extends Component {
   _renderItem = (item) => {
     let listItem = item.item;
     let index = item.index;
+
     // TODO: still have to have callback for edit and delete I guess
-    return <ListItem content={this.props.renderItem(listItem)} onSelect={() => this._onSelect(index)} />
+    return (
+      <ListItem
+        content={this.props.renderItem(listItem, index)}
+        onSelect={this.props.onSelect ? () => this.props.onSelect(index) : undefined }
+      />
+    )
   }
 
   render() {
