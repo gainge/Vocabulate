@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, Alert } from 'react-native'
+import { Text, View, Alert, StyleSheet } from 'react-native'
 
 import ListContainer from '../components/ListContainer';
 import Page from '../components/Page';
@@ -40,12 +40,28 @@ export default class ListScreen extends Component {
   render() {
     return (
       <Page>
-        {/* <Text>[{this.state.modelType}] title: {this.state.list.title}</Text> */}
         <ListContainer
           listData={this.state.list.items}
           renderItem={this._renderItem}
+          itemContainerStyle={[styles.generalItemContainer, styles[this.state.modelType]]}
         />
       </Page>
     )
   }
 }
+
+const styles = StyleSheet.create({
+  generalItemContainer: {
+    borderBottomWidth: 1,
+  },
+  [TOPICS]: {
+    borderBottomColor: '#ff00ff'
+  },
+  [TOOLS]: {
+
+  },
+  [VOCAB]: {
+
+  },
+
+})
