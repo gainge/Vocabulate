@@ -1,10 +1,10 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
-const TopicListItem = () => {
+const TopicListItem = (props) => {
   return (
     <View style={[styles.contentContainer, ]}>
-      <Text style={[styles.topicContent, ]} numberOfLines={1} >I'm a sick topic, check me outal fkaj dflkaj dflkaj !</Text>
+      <Text style={[styles.topicContent, ]} numberOfLines={1} >{props.topic.body}</Text>
     </View>
   )
 }

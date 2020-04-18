@@ -8,6 +8,7 @@ import { TOPICS, TOOLS, VOCAB } from '../util/Constants'
 import TopicListItem from '../components/TopicListItem';
 import ToolListItem from '../components/ToolListItem';
 import VocabListItem from '../components/VocabListItem';
+import AppStyles from '../styles/AppStyles';
 
 export default class ListScreen extends Component {
   constructor(props) {
@@ -52,16 +53,19 @@ export default class ListScreen extends Component {
 
 const styles = StyleSheet.create({
   generalItemContainer: {
-    borderBottomWidth: 1,
+    marginVertical: 2,
+    elevation: 1,
+    marginHorizontal: 5,
+    borderRadius: 3,
   },
   [TOPICS]: {
-    borderBottomColor: '#ff00ff'
+    backgroundColor: AppStyles.color.alternateMid,
   },
   [TOOLS]: {
-
+    backgroundColor: AppStyles.color.alternateNeutral,
   },
   [VOCAB]: {
-
+    backgroundColor: AppStyles.color.alternateLight,
   },
 
 })
