@@ -32,6 +32,7 @@ export default class ListContainer extends Component {
       <ListItem
         content={this.props.renderItem(listItem, index)}
         onSelect={this.props.onSelect ? () => this.props.onSelect(index) : undefined }
+        style={this.props.itemContainerStyle}
       />
     )
   }
