@@ -16,6 +16,13 @@ import { TOPICS, TOOLS, VOCAB, TEST } from '../util/Constants'
 import List from '../model/List'
 import TabBar from '../components/TabBar';
 import ListDataDisplay from '../components/ListDataDisplay';
+import AppStyles from '../styles/AppStyles';
+
+const COLORS = [
+  AppStyles.color.alternateMid,
+  AppStyles.color.alternateNeutral,
+  AppStyles.color.alternateLight,
+]
 
 class ListOverViewScreen extends Component {
   constructor(props) {
@@ -36,6 +43,8 @@ class ListOverViewScreen extends Component {
 
   _onSelectTab = (tabIndex) => {
     let newActiveTab = tabIndex;
+
+    this.props.navigation.setParams({ backgroundColor: COLORS[tabIndex] });
 
     this.setState({ activeTabIndex: newActiveTab });
   }

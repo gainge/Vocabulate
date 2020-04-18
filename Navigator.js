@@ -54,7 +54,14 @@ const StudyStack = createStackNavigator(
 
 const ListStack = createStackNavigator(
   {
-    ListOverview: ListOverview,
+    ListOverview: {
+      screen: ListOverview,
+      navigationOptions: ({ navigation }) => ({
+        headerStyle: {
+          backgroundColor: navigation.getParam('backgroundColor') || AppStyles.color.alternateMid
+        }
+      })
+    },
     List: ListScreen,
   },
   {
