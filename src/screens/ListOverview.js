@@ -12,7 +12,7 @@ import ListCreation from '../components/ListCreation';
 import { showModal, hideModal, addList } from '../store/Actions'
 
 import { uuid } from '../util/UUID'
-import constants from '../util/Constants'
+import { TOPICS, TOOLS, VOCAB } from '../util/Constants'
 import List from '../model/List'
 import TabBar from '../components/TabBar';
 
@@ -21,9 +21,9 @@ class ListOverViewScreen extends Component {
     super(props);
 
     const tabs = [
-      { label: constants.TOPICS },
-      { label: constants.TOOLS },
-      { label: constants.VOCAB},
+      { label: TOPICS },
+      { label: TOOLS },
+      { label: VOCAB},
     ]
 
     this.state = {

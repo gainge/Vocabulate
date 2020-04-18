@@ -3,6 +3,8 @@ import topicReducer from '../src/store/reducers/Topics'
 import Topic from '../src/model/Topic'
 import List from '../src/model/List'
 
+import { TOPICS } from '../src/util/Constants'
+
 describe('Topics Reducer', () => {
   it('should return the initial state', () => {
     expect(topicReducer(undefined, {})).toEqual(
@@ -18,7 +20,7 @@ describe('Topics Reducer', () => {
 
   it('should handle CREATE_TOPIC_LIST', () => {
     expect(topicReducer([], {
-      type: types.TOPIC.CREATE_TOPIC_LIST,
+      type: types[TOPICS].CREATE_LIST,
       list: basicList
     })).toEqual([
       basicList
@@ -32,7 +34,7 @@ describe('Topics Reducer', () => {
     expect(topicReducer([
       basicList
     ], {
-      type: types.TOPIC.ADD_TOPIC_TO_LIST,
+      type: types[TOPICS].ADD_ITEM_TO_LIST,
       topic: newTopic,
       listID: basicList.id,
     })).toEqual([
@@ -45,7 +47,7 @@ describe('Topics Reducer', () => {
     expect(topicReducer([
       addedList
     ], {
-      type: types.TOPIC.REMOVE_TOPIC_FROM_LIST,
+      type: types[TOPICS].REMOVE_ITEM_FROM_LIST,
       topicID: newTopic.id,
       listID: basicList.id,
     })).toEqual([
@@ -58,7 +60,7 @@ describe('Topics Reducer', () => {
     expect(topicReducer([
       addedList
     ], {
-      type: types.TOPIC.UPDATE_TOPIC,
+      type: types[TOPICS].UPDATE_ITEM,
       topicID: newTopic.id,
       listID: basicList.id,
       newTopicData: updatedTopic,

@@ -7,6 +7,8 @@ import {
 } from './ReducerUtilities'
 import { types } from '../Actions'
 
+import { VOCAB } from '../../util/Constants'
+
 function createVocabList(vocabState = [], action) {
   return addNewList(vocabState, action.list);
 }
@@ -25,10 +27,10 @@ function updateVocab(vocabState = [], action) {
 
 
 const vocabReducer = createReducer([], {
-  [types.VOCAB.CREATE_VOCAB_LIST]: createVocabList,
-  [types.VOCAB.ADD_VOCAB_TO_LIST]: addVocabToList,
-  [types.VOCAB.REMOVE_VOCAB_FROM_LIST]: removeVocabFromList,
-  [types.VOCAB.UPDATE_VOCAB]: updateVocab,
+  [types[VOCAB].CREATE_LIST]: createVocabList,
+  [types[VOCAB].ADD_ITEM_TO_LIST]: addVocabToList,
+  [types[VOCAB].REMOVE_ITEM_FROM_LIST]: removeVocabFromList,
+  [types[VOCAB].UPDATE_ITEM]: updateVocab,
 })
 
 

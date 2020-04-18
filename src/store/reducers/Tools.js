@@ -7,6 +7,7 @@ import {
 } from './ReducerUtilities'
 import { types } from '../Actions'
 
+import { TOOLS } from '../../util/Constants'
 
 function createToolList(toolsState = [], action) {
   return addNewList(toolsState, action.list);
@@ -26,10 +27,10 @@ function updateTool(toolsState = [], action) {
 
 
 const toolReducer = createReducer([], {
-  [types.TOOL.CREATE_TOOL_LIST]: createToolList,
-  [types.TOOL.ADD_TOOL_TO_LIST]: addToolToList,
-  [types.TOOL.REMOVE_TOOL_FROM_LIST]: removeToolFromList,
-  [types.TOOL.UPDATE_TOOL]: updateTool,
+  [types[TOOLS].CREATE_LIST]: createToolList,
+  [types[TOOLS].ADD_ITEM_TO_LIST]: addToolToList,
+  [types[TOOLS].REMOVE_ITEM_FROM_LIST]: removeToolFromList,
+  [types[TOOLS].UPDATE_ITEM]: updateTool,
 })
 
 

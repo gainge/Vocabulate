@@ -3,6 +3,7 @@ import vocabReducer from '../src/store/reducers/Vocab';
 import Vocab from '../src/model/Vocab';
 import List from '../src/model/List';
 
+import { VOCAB } from '../src/util/Constants'
 
 
 describe('Vocab Reducer', () => {
@@ -20,7 +21,7 @@ describe('Vocab Reducer', () => {
 
   it('should handle CREATE_VOCAB_LIST', () => {
     expect(vocabReducer([], {
-      type: types.VOCAB.CREATE_VOCAB_LIST,
+      type: types[VOCAB].CREATE_LIST,
       list: basicList
     })).toEqual([
       basicList
@@ -31,7 +32,7 @@ describe('Vocab Reducer', () => {
     expect(vocabReducer([
       basicList
     ], {
-      type: types.VOCAB.ADD_VOCAB_TO_LIST,
+      type: types[VOCAB].ADD_ITEM_TO_LIST,
       vocab: newVocab,
       listID: basicList.id,
     })).toEqual([
@@ -44,7 +45,7 @@ describe('Vocab Reducer', () => {
     expect(vocabReducer([
       addedList
     ], {
-      type: types.VOCAB.REMOVE_VOCAB_FROM_LIST,
+      type: types[VOCAB].REMOVE_ITEM_FROM_LIST,
       vocabID: newVocab.id,
       listID: basicList.id,
     })).toEqual([
@@ -57,7 +58,7 @@ describe('Vocab Reducer', () => {
     expect(vocabReducer([
       addedList
     ], {
-      type: types.VOCAB.UPDATE_VOCAB,
+      type: types[VOCAB].UPDATE_ITEM,
       vocabID: newVocab.id,
       listID: basicList.id,
       newVocabData: updatedVocab,

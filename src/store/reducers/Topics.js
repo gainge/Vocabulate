@@ -7,6 +7,7 @@ import {
 } from './ReducerUtilities'
 import { types } from '../Actions'
 
+import { TOPICS } from '../../util/Constants'
 
 function createTopicList(topicsState = [], action) {
   return addNewList(topicsState, action.list);
@@ -27,10 +28,10 @@ function updateTopic(topicsState = [], action) {
 
 /* createReducer(initialState, handlers) */
 const topicReducer = createReducer([], {
-  [types.TOPIC.CREATE_TOPIC_LIST]: createTopicList,
-  [types.TOPIC.ADD_TOPIC_TO_LIST]: addTopicToList,
-  [types.TOPIC.REMOVE_TOPIC_FROM_LIST]: removeTopicFromList,
-  [types.TOPIC.UPDATE_TOPIC]: updateTopic,
+  [types[TOPICS].CREATE_LIST]: createTopicList,
+  [types[TOPICS].ADD_ITEM_TO_LIST]: addTopicToList,
+  [types[TOPICS].REMOVE_ITEM_FROM_LIST]: removeTopicFromList,
+  [types[TOPICS].UPDATE_ITEM]: updateTopic,
 })
 
 export default topicReducer;

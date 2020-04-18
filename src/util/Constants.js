@@ -1,8 +1,7 @@
-const contants = {
-  TOPICS: 'Topics',
-  TOOLS: 'Tools',
-  VOCAB: 'Vocab',
-}
+
+const TOPICS = 'Topics';
+const TOOLS = 'Tools';
+const VOCAB = 'Vocab';
 
 
-export default contants;
+export default { TOPICS, TOOLS, VOCAB };

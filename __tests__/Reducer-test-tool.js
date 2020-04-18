@@ -3,6 +3,8 @@ import toolReducer from '../src/store/reducers/Tools';
 import Tool from '../src/model/Tool';
 import List from '../src/model/List';
 
+import { TOOLS } from '../src/util/Constants'
+
 
 describe('Tools Reducer', () => {
   it('should return the initial state', () => {
@@ -20,7 +22,7 @@ describe('Tools Reducer', () => {
 
   it('should handle CREATE_TOOL_LIST', () => {
     expect(toolReducer([], {
-      type: types.TOOL.CREATE_TOOL_LIST,
+      type: types[TOOLS].CREATE_LIST,
       list: basicList
     })).toEqual([
       basicList
@@ -32,7 +34,7 @@ describe('Tools Reducer', () => {
     expect(toolReducer([
       basicList
     ], {
-      type: types.TOOL.ADD_TOOL_TO_LIST,
+      type: types[TOOLS].ADD_ITEM_TO_LIST,
       tool: newTool,
       listID: basicList.id,
     })).toEqual([
@@ -45,7 +47,7 @@ describe('Tools Reducer', () => {
     expect(toolReducer([
       addedList
     ], {
-      type: types.TOOL.REMOVE_TOOL_FROM_LIST,
+      type: types[TOOLS].REMOVE_ITEM_FROM_LIST,
       toolID: newTool.id,
       listID: basicList.id,
     })).toEqual([
@@ -58,7 +60,7 @@ describe('Tools Reducer', () => {
     expect(toolReducer([
       addedList
     ], {
-      type: types.TOOL.UPDATE_TOOL,
+      type: types[TOOLS].UPDATE_ITEM,
       toolID: newTool.id,
       listID: basicList.id,
       newToolData: updatedTool,
