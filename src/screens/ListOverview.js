@@ -12,9 +12,10 @@ import ListCreation from '../components/ListCreation';
 import { showModal, hideModal, addList } from '../store/Actions'
 
 import { uuid } from '../util/UUID'
-import { TOPICS, TOOLS, VOCAB } from '../util/Constants'
+import { TOPICS, TOOLS, VOCAB, TEST } from '../util/Constants'
 import List from '../model/List'
 import TabBar from '../components/TabBar';
+import ListDataDisplay from '../components/ListDataDisplay';
 
 class ListOverViewScreen extends Component {
   constructor(props) {
@@ -23,13 +24,13 @@ class ListOverViewScreen extends Component {
     const tabs = [
       { label: TOPICS },
       { label: TOOLS },
-      { label: VOCAB},
+      { label: VOCAB },
     ]
 
     this.state = {
       tabs: tabs,
       datasets: props.datasets,
-      activeTabIndex: 0
+      activeTabIndex: 0,
     }
   }
 
@@ -42,10 +43,9 @@ class ListOverViewScreen extends Component {
   _onSelectListItem = (itemIndex) => {
     // Navigate to list screen, providing the selected list ID and model type?
     // I guess we pass in the label or something?
-    const currentListID = this.state.datasets[this.state.activeTabIndex][itemIndex].id;
-    console.log(currentListID);
+    const currentList = this.state.datasets[this.state.activeTabIndex][itemIndex];
 
-    this.props.navigation.navigate('List', { listID: currentListID, modelType: this._getCurrentListType() });
+    this.props.navigation.navigate('List', { list: currentList, modelType: this._getCurrentListType() });
   }
 
   _onAddItem = () => {
@@ -56,6 +56,10 @@ class ListOverViewScreen extends Component {
     return this.state.tabs[this.state.activeTabIndex].label;
   }
 
+  _renderItem = (list) => {
+    return <ListDataDisplay title={list.title} items={list.items} />
+  }
+
   render() {
     return (
       <Page>
@@ -64,6 +68,7 @@ class ListOverViewScreen extends Component {
           onSelect={this._onSelectListItem}
           onAddItem={this._onAddItem}
           listData={this.state.datasets[this.state.activeTabIndex]}
+          renderItem={this._renderItem}
         />
       </Page>
     )

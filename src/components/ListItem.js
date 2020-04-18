@@ -16,8 +16,6 @@ export default class ListItem extends Component {
   }
 
   render() {
-    let list = this.props.list;
-
     return (
       <View style={[styles.itemContainer, this.props.style]}>
         <View style={styles.iconContainer}>
@@ -33,7 +31,7 @@ export default class ListItem extends Component {
           style={styles.dataContainer}
           onPress={this.props.onSelect}
         >
-          <ListDataDisplay  title={list.title} items={list.items} />
+          {this.props.content}
         </TouchableOpacity>
       </View>
     )
@@ -57,7 +55,7 @@ const styles = StyleSheet.create({
 
 
 ListItem.propTypes = {
-  list: PropTypes.instanceOf(List)
+  // list: PropTypes.instanceOf(List)
 }
 
 
