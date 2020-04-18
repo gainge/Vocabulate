@@ -15,6 +15,7 @@ const AppStyles = {
     textLight: '#ffffff',
     textLightSecondary: '#f6f1d1',
     alternateDark: '#5c374c',
+    alternateMid: '#9d8793',
     alternateNeutral: '#c8bfc7',
     alternateLight: '#f2ecea',
     activeTab: '#e9e9e9'
